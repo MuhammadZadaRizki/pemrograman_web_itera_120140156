@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Personal Dashboard</h1>
+    
+    <div class="dashboard">
+        <div class="card weather-card">
+            <h2>Cuaca</h2>
+            <div class="city-selector">
+                <input type="text" id="cityInput" class="city-input" placeholder="Masukkan kota">
+                <button id="updateWeatherBtn" class="update-btn">Perbarui</button>
+            </div>
+            <div class="weather-info">
+                <div class="weather-icon" id="weatherIcon">⛅</div>
+                <div>
+                    <div id="weatherLocation">Loading...</div>
+                    <div id="weatherTemp">--°C</div>
+                    <div id="weatherDesc">--</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card time-card">
+            <h2>Waktu</h2>
+            <div class="time-display" id="timeDisplay">00:00:00</div>
+            <div class="date-display" id="dateDisplay">Hari, DD Bulan YYYY</div>
+        </div>
+        
+        <div class="card notes-card">
+            <h2>Catatan Pribadi</h2>
+            <ul class="notes-list" id="notesList"></ul>
+            <div class="note-form">
+                <input type="text" id="noteInput" class="note-input" placeholder="Tambah catatan baru...">
+                <button id="addNoteBtn" class="add-btn">Tambah</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
