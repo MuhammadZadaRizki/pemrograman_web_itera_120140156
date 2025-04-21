@@ -1,0 +1,50 @@
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .stat-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 0;
+  }
+  
+  .total-books {
+    background-color: #f0f7ff;
+    border: 1px solid #b8daff;
+  }
+  
+  .owned-books {
+    background-color: #f0fff4;
+    border: 1px solid #c6f6d5;
+  }
+  
+  .reading-books {
+    background-color: #fff6f6;
+    border: 1px solid #fed7d7;
+  }
+  
+  .wishlist-books {
+    background-color: #fffaf0;
+    border: 1px solid #feebc8;
+  }
